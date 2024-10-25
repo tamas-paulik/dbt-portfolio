@@ -1,0 +1,1 @@
+Macros are pieces of Jinja code that can be reused in multiple places via parameters. Same as python functions.
