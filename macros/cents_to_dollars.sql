@@ -1,6 +1,8 @@
 {# A basic example for a project-wide macro to cast a column uniformly #}
 
 {% macro cents_to_dollars(column_name) -%}
+    -- adapter.dispatch: using the function dbt will look for an implementation of 
+    -- cents_to_dollars specific to the adapter in use (e.g., BigQuery, Snowflake, etc.).
     {{ return(adapter.dispatch('cents_to_dollars')(column_name)) }}
 {%- endmacro %}
 
