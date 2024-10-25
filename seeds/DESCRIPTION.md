@@ -1,0 +1,1 @@
+Seeds are csv files that can be used in models in addition to the 'source' data from the database
